@@ -1,4 +1,4 @@
-package ru.netology.qahwweb.appordertests;
+package ru.netology.qahwselenide.appcarddeliverytests;
 
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ public class AppCardDeliveryTest {
     @Test
     void shouldSendFormPositivePath() {
         LocalDate date = LocalDate.now();
-        date = date.plusDays(4);
+        date = date.plusDays(5);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         String formDate = date.format(formatter);
 
